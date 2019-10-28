@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "The backend for the ui",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Daniel Tuttle",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

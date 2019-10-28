@@ -1,8 +1,12 @@
 FROM alpine:latest
 WORKDIR ./
 RUN apk add --update npm
-RUN npm install
 COPY ui ui
-EXPOSE 3000
+COPY backend backend
+WORKDIR ./ui
+RUN npm install
+WORKDIR ./backend
+RUN npm install
+EXPOSE 3000 8080
 WORKDIR ./ui
 ENTRYPOINT ["npm", "start"]

@@ -6,7 +6,7 @@ import axios from 'axios';
 function hit() {
   console.log("hitting endpoint");
   axios.get("http://localhost:8080")
-      .then(res => alert(res));
+      .then(res => alert(res.data));
 }
 
 function App() {
